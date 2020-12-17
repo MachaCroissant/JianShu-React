@@ -23,7 +23,7 @@ export const TryToLogin = () => {
     const onloginButtonClicked = () => {
         if(canSave){
             axios
-            .get('http://localhost:3001/api/login.json')
+            .get('/api/login.json')
             .then(response => {
             const result = response.data.data
             console.log(result)
